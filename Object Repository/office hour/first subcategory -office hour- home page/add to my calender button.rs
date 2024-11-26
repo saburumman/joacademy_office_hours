@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>add to my calender button</name>
+   <tag></tag>
+   <elementGuidId>c581301d-2c8e-4ac6-b18a-e32eafe34bdc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button[name=&quot;calendar&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@name='calendar']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;calendar&quot;i >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>37ba1153-f6d6-42c1-89d6-0163db4fab43</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>calendar</value>
+      <webElementGuid>e6da2b7b-8bd0-4763-a847-cf1a7323f480</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>calendar</value>
+      <webElementGuid>26445879-1994-43be-8d96-c55860063ab6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tw-h-[32px] tw-w-[231px] tw-self-center tw-rounded-lg tw-border tw-border-solid tw-border-[#1A428A] !tw-bg-transparent tw-text-[#1A428A] disabled:tw-cursor-not-allowed disabled:tw-border-gray-200 disabled:!tw-bg-gray-200 disabled:!tw-text-brand-blue/50 max-sm:tw-w-[160px]</value>
+      <webElementGuid>6abe8ec4-d669-4cbc-a676-0ad7e6822e1b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>اضف الى رزنامتي</value>
+      <webElementGuid>39550eeb-d339-411f-b3dd-44f1db583546</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__next&quot;)/div[@class=&quot;tw-flex tw-min-h-screen tw-w-full tw-flex-col tw-justify-between tw-bg-[#F9F9F9]&quot;]/div[@class=&quot;tw-w-full&quot;]/div[@class=&quot;tw-relative tw-flex tw-w-full&quot;]/div[@class=&quot;tw-flex tw-flex-col tw-mx-auto tw-w-full lg:tw-w-[calc(100vw-280px)] tw-relative !tw-w-full !tw-overflow-hidden&quot;]/div[1]/div[@class=&quot;tw-bg-[#F9F9F9] tw-px-5&quot;]/div[@class=&quot;tw-flex tw-w-full tw-items-center tw-justify-center tw-bg-[#F9F9F9]&quot;]/div[@class=&quot;tw-w-full tw-max-w-[1500px]&quot;]/div[@class=&quot;tw-pb-10 max-sm:tw-bg-white&quot;]/section[@class=&quot;tw-flex tw-flex-wrap tw-items-center tw-justify-center tw-gap-4 tw-px-4&quot;]/div[@class=&quot;tw-flex tw-h-fit tw-w-[255px]  tw-flex-col tw-gap-4 tw-rounded-t-2xl tw-bg-white tw-p-4 max-sm:tw-shadow-[0px_4px_6px_0px_#0000001A]&quot;]/button[@class=&quot;tw-h-[32px] tw-w-[231px] tw-self-center tw-rounded-lg tw-border tw-border-solid tw-border-[#1A428A] !tw-bg-transparent tw-text-[#1A428A] disabled:tw-cursor-not-allowed disabled:tw-border-gray-200 disabled:!tw-bg-gray-200 disabled:!tw-text-brand-blue/50 max-sm:tw-w-[160px]&quot;]</value>
+      <webElementGuid>c2f7e1f0-be5c-4826-99a1-a9adb545303f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@name='calendar']</value>
+      <webElementGuid>52990f58-395d-4daf-9b44-d12f5192b755</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__next']/div/div[2]/div/div[2]/div/div/div[2]/div/div/section/div/button</value>
+      <webElementGuid>ae0eaf29-4c4b-48cb-b6f8-aabb3d93ca0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='/'])[2]/following::button[1]</value>
+      <webElementGuid>8ce69ec3-90f5-4507-95ed-e1c16730f206</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='/'])[1]/following::button[2]</value>
+      <webElementGuid>165b3539-ce96-4045-8ba2-acf3504f90f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='تذييل جو أكاديمي'])[1]/preceding::button[5]</value>
+      <webElementGuid>42a20001-e94e-45ee-8ba5-8b7f78255b7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='روابط سريعة'])[1]/preceding::button[5]</value>
+      <webElementGuid>1262fe72-453b-46b7-b871-4e1bd8e66df8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/button</value>
+      <webElementGuid>6935b279-acb6-44d7-b470-68496bfdb718</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@name = 'calendar' and (text() = 'اضف الى رزنامتي' or . = 'اضف الى رزنامتي')]</value>
+      <webElementGuid>efef1038-d09b-4554-b253-10e7dfb632e3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

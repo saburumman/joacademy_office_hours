@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>my calender button</name>
+   <tag></tag>
+   <elementGuidId>ed025401-1717-46fe-9f81-c38c5f63fbf4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[contains(@href, '/user/calender')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot; رزنامتي&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>72efbfaa-8b5f-49d7-8abf-0da3b7146dd1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>medium tw-flex tw-w-full tw-items-center tw-gap-1 tw-text-[16px] tw-text-[#343434]</value>
+      <webElementGuid>bcda64ab-678e-469a-983e-e9e01269ae89</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/user/calender</value>
+      <webElementGuid>0ee27c62-16a3-4117-a98a-a3f7a0abe462</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>رزنامتي</value>
+      <webElementGuid>239bcf95-e5f1-49f7-a585-d09c4e84fcaa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__next&quot;)/div[@class=&quot;tw-flex tw-min-h-screen tw-w-full tw-flex-col tw-justify-between tw-bg-[#F9F9F9]&quot;]/div[@class=&quot;tw-w-full&quot;]/div[@class=&quot;tw-relative tw-flex tw-w-full&quot;]/div[@class=&quot;tw-sticky tw-top-24 tw-my-6 tw-ms-8 tw-hidden tw-h-full tw-min-w-[240px] tw-max-w-[240px] lg:tw-block&quot;]/div[@class=&quot;tw-h-full tw-w-full tw-bg-white tw-p-2 lg:tw-rounded-[14px] lg:tw-border lg:tw-border-gray-100 lg:tw-p-8&quot;]/div[@class=&quot;tw-flex tw-h-full tw-w-full tw-flex-col tw-items-start tw-justify-start tw-gap-[6px]&quot;]/a[@class=&quot;medium tw-flex tw-w-full tw-items-center tw-gap-1 tw-text-[16px] tw-text-[#343434]&quot;]</value>
+      <webElementGuid>6d5da797-4644-47df-9c23-7c5d8c997109</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__next']/div/div[2]/div[2]/div/div/div/a[5]</value>
+      <webElementGuid>2ae6c540-6ed5-45fd-9b7b-668515f893fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='مفضلتي'])[1]/following::a[1]</value>
+      <webElementGuid>6b16caa6-c850-444a-8668-de7bedbf3995</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ملفاتي'])[1]/following::a[2]</value>
+      <webElementGuid>b7cb62c3-d344-4363-9a2b-fad9f9951202</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='الدورات'])[1]/preceding::a[1]</value>
+      <webElementGuid>1a5443bb-7826-440a-942d-026ab4bac9d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/user/calender')]</value>
+      <webElementGuid>51dd722c-413e-4f16-9566-55025f84578f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/a[5]</value>
+      <webElementGuid>b5d420b0-c741-4f26-ae9d-5722375b4af6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/user/calender' and (text() = 'رزنامتي' or . = 'رزنامتي')]</value>
+      <webElementGuid>3de2e7ef-370e-468f-980c-b79833754099</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
