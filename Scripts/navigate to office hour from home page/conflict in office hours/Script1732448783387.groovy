@@ -122,9 +122,7 @@ if (WebUI.waitForElementPresent(toastMessage, 10, FailureHandling.OPTIONAL)) {
 		TestObject h2Object = createDynamicObject("//h2[contains(@class, 'tw-font-bold')]")
 		String myCalendarOfficeHourTitle = WebUI.getText(h2Object)
 		println("My Calendar Office Hour Title: " + myCalendarOfficeHourTitle)
-		
+}}
 
-
-
-
+// Get the title of the office hour from "My Calendar"
 
