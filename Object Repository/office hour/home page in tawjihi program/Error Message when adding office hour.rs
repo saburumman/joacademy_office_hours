@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>second element office hour</name>
+   <name>Error Message when adding office hour</name>
    <tag></tag>
-   <elementGuidId>e7e758b6-d577-4852-b7c3-81739e7cf5ed</elementGuidId>
+   <elementGuidId>1ce3cfda-2233-481b-970f-87c5e38e293f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>&#xd;
-&#xd;
-&#xd;
-&#xd;
-&#xd;
-0</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@name='calendar'])[2]</value>
+         <value>//div[text()='لا يمكنك إضافة هذه الحصة لرزنامتك فهي تتعارض مع موعد حصة مضافة سابقاً لرزنامتك']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

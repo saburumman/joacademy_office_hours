@@ -19,9 +19,6 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.JavascriptExecutor
-import com.kms.katalon.core.testobject.TestObject
-
-
 
 // Function to create a dynamic TestObject
 TestObject createDynamicObject(String xpath) {
@@ -62,49 +59,51 @@ if (!(WebUI.verifyElementText(findTestObject('Object Repository/office hour/home
     WebUI.click(findTestObject('Object Repository/office hour/home page in tawjihi program/change program selector'))
     WebUI.click(findTestObject('Object Repository/office hour/home page in tawjihi program/program tawjihi from list in bannar'))
 } else {
-	
     WebUI.click(findTestObject('Object Repository/office hour/home page in tawjihi program/tawjihi first sub-category button in home page'))
     WebUI.click(findTestObject('Object Repository/office hour/first subcategory -office hour- home page/office hour first sub-category from home page'))
 }
 
-// Find the element
+// Find the element and scroll to view
 TestObject officehourdates = findTestObject('Object Repository/office hour/office hour first element/first element in dates of office hours')
 JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
-
 // Use JavaScript to center the element on the screen
 js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(officehourdates))
-
-// Interact with the office hour and capture the title
-WebUI.click(findTestObject('Object Repository/office hour/office hour first element/first element in dates of office hours'))
+WebUI.click(officehourdates)
 
 // Find the element
-TestObject officehourcards = findTestObject('Object Repository/office hour/office hour first element/first element office hour')
-
+TestObject officehourcard = findTestObject('Object Repository/office hour/office hour first element/first element office hour')
 // Use JavaScript to center the element on the screen
-js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(officehourcards))
+js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(officehourcard))
 
-String homePageOfficeHourTitle = WebUI.getText(findTestObject('Object Repository/office hour/office hour first element/title of the first office hour'))
-// Retrieve Title Text from the homepage
-TestObject titleObject = createDynamicObject("//p[contains(@class, 'tw-line-clamp-2')]")
-homePageOfficeHourTitle = WebUI.getText(titleObject)
+// Capture First Office Hour Title from Home Page
+TestObject FirstOfficeHourTitleObject = createDynamicObject("//p[contains(@class, 'tw-line-clamp-2')]")
+String homePageOfficeHourTitle = WebUI.getText(FirstOfficeHourTitleObject).trim()
 println("Homepage Office Hour Title: " + homePageOfficeHourTitle)
+
+TestObject SecondOfficeHourTitleObject = createDynamicObject("(//p[contains(@class, 'tw-line-clamp-2')])[2]")
+String secondOfficeHourTitle = WebUI.getText(SecondOfficeHourTitleObject)
+println("Second Office Hour Title: ${secondOfficeHourTitle}")
 
 WebUI.click(findTestObject('Object Repository/office hour/office hour first element/first element office hour'))
 WebUI.click(findTestObject('Object Repository/office hour/second element office hour'))
-// Define the toast message TestObject
-TestObject toastMessage = findTestObject('Object Repository/office hour/home page in tawjihi program/success Message when adding office hour')
-String ErrorMessage = "لا يمكنك إضافة هذه الحصة لرزنامتك فهي تتعارض مع موعد حصة مضافة سابقاً لرزنامتك "
-WebUI.click(toastMessage)
-// Use dynamic waiting for the toast message
-if (WebUI.waitForElementPresent(toastMessage, 10, FailureHandling.OPTIONAL)) {
-	WebUI.comment("Toast message appeared.")
-	String actualMessage = WebUI.getText(toastMessage)
 
-	if (actualMessage.contains(ErrorMessage)) {
-		WebUI.comment("Error message detected: " + actualMessage)
-		// Navigate to "My Calendar"
-		WebUI.click(findTestObject('Object Repository/office hour/my calender side bar/my calender button'))
-		WebUI.waitForPageLoad(30)
+TestObject toastMessage = findTestObject('Object Repository/office hour/home page in tawjihi program/Error Message when adding office hour')
+String ErrorMessage = "لا يمكنك إضافة هذه الحصة لرزنامتك فهي تتعارض مع موعد حصة مضافة سابقاً لرزنامتك"
+WebUI.click(toastMessage)
+
+if (WebUI.waitForElementVisible(toastMessage, 10)) {
+    String actualMessage = WebUI.getText(toastMessage)
+    if (actualMessage == ErrorMessage) {
+        WebUI.comment("Error message detected: " + actualMessage)
+		
+		// Find the element and scroll to view
+		TestObject officehoursidebar =findTestObject('Object Repository/office hour/my calender side bar/my calender button')
+		// Use JavaScript to center the element on the screen
+		js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(officehoursidebar))
+		
+        WebUI.click(findTestObject('Object Repository/office hour/my calender side bar/my calender button'))
+        WebUI.waitForPageLoad(30)
+		
 		// Find the element
 		TestObject officehourcalender = findTestObject('Object Repository/office hour/my calender side bar/office hours inside my calender')
 		// Use JavaScript to center the element on the screen
@@ -116,13 +115,23 @@ if (WebUI.waitForElementPresent(toastMessage, 10, FailureHandling.OPTIONAL)) {
 		// Use JavaScript to center the element on the screen
 		js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(cardincalender))
 		WebUI.delay(5) // Delays the execution for 5 seconds
-				
-
+		
 		// Get the title of the office hour from "My Calendar"
-		TestObject h2Object = createDynamicObject("//h2[contains(@class, 'tw-font-bold')]")
-		String myCalendarOfficeHourTitle = WebUI.getText(h2Object)
-		println("My Calendar Office Hour Title: " + myCalendarOfficeHourTitle)
-}}
+        TestObject myCalendarOfficeHourTitleObject = createDynamicObject("//h2[contains(@class, 'tw-font-bold')]")
+        String myCalendarOfficeHourTitle = WebUI.getText(myCalendarOfficeHourTitleObject)
+        println("My Calendar Office Hour Title: " + myCalendarOfficeHourTitle)
 
-// Get the title of the office hour from "My Calendar"
+		
+        if (homePageOfficeHourTitle == myCalendarOfficeHourTitle) {
+            WebUI.comment("The office hour titles match: " + homePageOfficeHourTitle)
+        } else {
+            WebUI.comment("Mismatch in office hour titles! Home Page: " + homePageOfficeHourTitle + ", My Calendar: " + myCalendarOfficeHourTitle)
+        }
 
+        if (myCalendarOfficeHourTitle.contains(secondOfficeHourTitle)) {
+            WebUI.comment("Error: The second office hour title should not appear in the calendar, but it was found: " + secondOfficeHourTitle)
+        } else {
+            WebUI.comment("The second office hour title is not present in the calendar as expected.")
+        }
+    }
+}

@@ -102,6 +102,12 @@ if (WebUI.waitForElementPresent(toastMessage, 10, FailureHandling.OPTIONAL)) {
 
     if (actualMessage.contains(successMessage)) {
         WebUI.comment("Success message detected: " + actualMessage)
+		
+		// Find the element and scroll to view
+		TestObject officehoursidebar =findTestObject('Object Repository/office hour/my calender side bar/my calender button')
+		// Use JavaScript to center the element on the screen
+		js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(officehoursidebar))
+		
         // Navigate to "My Calendar"
         WebUI.click(findTestObject('Object Repository/office hour/my calender side bar/my calender button'))
 		WebUI.waitForPageLoad(30) // Waits for up to 30 seconds
