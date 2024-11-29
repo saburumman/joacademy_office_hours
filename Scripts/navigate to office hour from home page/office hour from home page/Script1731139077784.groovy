@@ -78,10 +78,10 @@ js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest
 WebUI.click(findTestObject('Object Repository/office hour/office hour first element/first element in dates of office hours'))
 
 // Find the element
-TestObject element1 = findTestObject('Object Repository/office hour/office hour first element/first element office hour')
+TestObject officehourcard = findTestObject('Object Repository/office hour/office hour first element/first element office hour')
 
 // Use JavaScript to center the element on the screen
-js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(element1))
+js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(officehourcard))
 
 String homePageOfficeHourTitle = WebUI.getText(findTestObject('Object Repository/office hour/office hour first element/title of the first office hour'))
 WebUI.click(findTestObject('Object Repository/office hour/office hour first element/first element office hour'))
