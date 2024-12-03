@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Object Repository/recording login test case/Page_- j
 
 WebUI.verifyElementNotPresent(findTestObject('recording login test case/Page_- joacademy.com/login button'), 0)
 
-WebUI.click(findTestObject('Object Repository/office hour/home page in tawjihi program/joacademy logo'))
+WebUI.click(findTestObject('Object Repository/office hour/home page in tawjihi program/joacademy logo new'))
 
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/office hour/first subcategory -office hour- home page/splash popup'),
 	0)) {

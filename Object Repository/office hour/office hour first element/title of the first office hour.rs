@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='__next']/div/div[2]/div/div[2]/div/div/div[2]/div/div/section/div/p</value>
+         <value>//*/text()[normalize-space(.)='حصة تفاعلية للأسئلة أ. اسامة العكور - أدبي']/parent::*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

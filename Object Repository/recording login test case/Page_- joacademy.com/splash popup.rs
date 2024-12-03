@@ -6,15 +6,15 @@
    <elementGuidId>43e11e77-a685-4020-95ca-7ebd15e4ecdf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span/div/i</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div > i.ri-close-line</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span/div/i</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>

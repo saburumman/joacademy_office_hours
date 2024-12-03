@@ -6,15 +6,15 @@
    <elementGuidId>ac7d1819-4816-409d-96da-a8ceecfd75d6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span/div/i</value>
+         <key>CSS</key>
+         <value>div.tw-absolute.tw-cursor-pointer i.ri-close-line</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>div > i.ri-close-line</value>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>c39dd786-cc31-4c05-91a9-f9db4300f814</webElementGuid>
+      <webElementGuid>ba612091-a514-4505-9562-bb4a6e6dcfc2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ri-close-line</value>
-      <webElementGuid>b2dc378c-e828-4ac4-963f-d74aaf368e02</webElementGuid>
+      <webElementGuid>8dcbc991-bec4-4b7e-8d14-6ff4e219dc14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[@class=&quot;&quot;]/body[1]/div[2]/div[@class=&quot;ant-modal-root css-14i19y2&quot;]/div[@class=&quot;ant-modal-wrap ant-modal-wrap-rtl&quot;]/div[@class=&quot;ant-modal css-14i19y2 blackFrdiayModal&quot;]/div[2]/div[@class=&quot;ant-modal-content&quot;]/button[@class=&quot;ant-modal-close&quot;]/span[@class=&quot;ant-modal-close-x&quot;]/div[1]/i[@class=&quot;ri-close-line&quot;]</value>
-      <webElementGuid>315aca09-4af0-4f29-b71d-6fd5cf030810</webElementGuid>
+      <webElementGuid>500218c8-f0f8-4b5b-8140-e83f479ef6dc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,6 +53,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span/div/i</value>
-      <webElementGuid>b2e101f2-ed2c-450b-b21c-177f5a4d324f</webElementGuid>
+      <webElementGuid>5888073b-1d9f-4b6e-b8a4-2075769e7b40</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
