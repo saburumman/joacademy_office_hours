@@ -86,7 +86,6 @@ TestObject officehourcard=findTestObject('Object Repository/office hour/office h
 // Use JavaScript to center the element on the screen
 js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", WebUI.findWebElement(officehourcard))
 
-String homePageOfficeHourTitle = WebUI.getText(findTestObject('Object Repository/office hour/office hour first element/title of the first office hour'))
 // Retrieve Title Text from the homepage
 TestObject titleObject = createDynamicObject("//p[contains(@class, 'tw-line-clamp-2')]")
 homePageOfficeHourTitle = WebUI.getText(titleObject)
